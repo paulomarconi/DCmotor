@@ -109,7 +109,7 @@ The objective is to model the dynamics of a DC servo motor with gear train, \fig
 \end{figure}
 
 \section{Free-body diagram analysis}
-The system can be decomposed in two sections: a rotational mechanical, and an electronmechanical. The rotational mechanical can be derived as follows,
+The system can be decomposed in two sections: a rotational mechanical, and an electro-nmechanical. The rotational mechanical can be derived as follows,
 
 \begin{figure}[H]
 	\centering
@@ -119,7 +119,7 @@ The system can be decomposed in two sections: a rotational mechanical, and an el
 \end{figure}
 where $\theta$ is the angular displacement, $\omega$ is the angular speed, $B$ is the rotational viscous-damping coefficient, $K$ is the stiffness coefficient, $J$ is the moment of inertia, $f_c$ is the contact force between two gears, and $r$ is the gear radius.
 
-The electromechanical section (DC motor) is
+The electro-mechanical section (DC motor) is
 
 \begin{figure}[H]
 	\centering
@@ -127,7 +127,7 @@ The electromechanical section (DC motor) is
 	\caption{Electromechanical free-body diagram.}
 	\label{fig:electromechanical_free-body}
 \end{figure}
-where $R_F$ is the field resistance, $L_F$ is the field inductance, $E_F$ is the applied constant field voltage, and $i_F$ is the input field current. $R_A$ is the stationary resistance, $L_A$ is the stationary inductance, and $e_m$ is the induced voltage, $i_A$ is the input stationary current, and $e_i(t)$ is the applied armature voltage, and $\tau_e$ is the electromechanical driving torque exerted on the rotor. 
+where $R_F$ is the field resistance, $L_F$ is the field inductance, $E_F$ is the applied constant field voltage, and $i_F$ is the input field current. $R_A$ is the stationary resistance, $L_A$ is the stationary inductance, and $e_m$ is the induced voltage, $i_A$ is the input stationary current, and $e_i(t)$ is the applied armature voltage, and $\tau_e$ is the electro-mechanical driving torque exerted on the rotor. 
 
 If the flux density $\mathcal{B}$ is
 \begin{align}
@@ -175,7 +175,7 @@ it becomes in
 	J_{eq} \dot{\omega}_2+B_{eq} \omega_2+K_2 \theta_2-N \tau_e(t)-\tau_L(t) = 0 \label{eq:Rot3}
 \end{align}
 
-Now, let us derive the equations of the electromechanical section using Kirchoff's law.
+Now, let us derive the equations of the electro-mechanical section using Kirchoff's law.
 \begin{align}
 	\sum V_{all}            & = 0 		\nonumber             \\
 	e_m+V_{L_{A}}+V_{R_{A}} & = e_i(t) 	\label{eq:Elec1}
